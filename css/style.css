@@ -1,0 +1,261 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background: #fff;
+  font-family: verdana;
+  color: #ffff;
+}
+/* Estilo del header o cabezera de la pagina web */
+.header{
+  position: relative;
+  margin-top: 5px;
+  margin-left:  5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  height: 100px;
+}
+
+[class^="contenedor-"]{
+  float: left;
+  border: 3px solid #ffff;
+  border-radius: 20px;
+  background-color: rgb(23, 4, 41);
+  text-align: center;
+  line-height: 100px;
+  font-size: .8em;
+  text-shadow: 1px 1px 5px #fff;
+}
+.contenedor-cabezera{
+  width: 80%;
+  letter-spacing:1em;
+}
+.contenedor-icono{
+  width: 20%;
+}
+.logo{
+  width: 50%;
+}
+
+/* Estilo del nav o menu de la pagina web */
+.body{
+  position: relative;
+  margin-top: 5px;
+  margin-left:  5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  height: 500px;
+}
+.menu{
+  display: none;
+}
+[class^="cuerpo-"]{
+  float: left;
+  border: 3px solid #ffff;
+  border-radius: 20px;
+  background-color: rgb(23, 4, 41);
+  text-align: center;
+  font-size: .8em;
+  height: 500px;
+  text-shadow: 1px 1px 5px #fff;
+}
+.cuerpo-nav{
+  width: 20%;
+  line-height: 500px;
+}
+.cuerpo-section{
+  width: 50%;
+}
+.cuerpo-section h2{
+  padding-top: 20px;
+}
+.cuerpo-aside{
+  width: 30%;
+  line-height: 500px;
+}
+
+[class^="articulo-"]{
+  border: 3px solid #ffff;
+  border-radius: 20px;
+  background-color: rgb(23, 4, 41);
+  text-align: center;
+  font-size: .8em;
+  height: 130px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-shadow: 1px 1px 5px #fff;
+  line-height: 130px;
+}
+
+/* Estilo del footer o pie de pagina de la pagina web */
+.footer{
+  position: relative;
+  margin-top: 5px;
+  margin-left:  5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  height: 150px;
+  bottom: 0;
+}
+.piedepagina{
+  border: 3px solid #ffff;
+  border-radius: 20px;
+  background-color: rgb(23, 4, 41);
+  text-align: center;
+  height: 150px;
+  line-height: 150px;
+  text-shadow: 1px 1px 5px #fff;
+}
+
+/* Diseño responsivo para 800px */
+@media screen and (max-width: 800px) {
+  /* responsivo para header */
+  .header{
+    position: relative;
+    margin-top: 1px;
+    margin-left:  1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    height: 100px;
+  }
+
+  [class^="contenedor-"]{
+    line-height: 100px;
+    font-size: .6em;
+  }
+  .contenedor-cabezera{
+    width: 80%;
+    letter-spacing:1em;
+  }
+  .contenedor-icono{
+    width: 20%;
+  }
+  /* responsivo para cuerpo de la pagina */
+  .body{
+    position: relative;
+    margin-top: 1px;
+    margin-left:  1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    height: 380px;
+  }
+
+  [class^="cuerpo-"]{
+    text-align: center;
+    font-size: .6em;
+  }
+  .cuerpo-nav{
+    width: 100%;
+    line-height: 80px;
+    height: 80px;
+  }
+  .cuerpo-section{
+    width: 65%;
+    height: 300px;
+    float: left;
+  }
+  .cuerpo-section h2{
+    padding-top: 10px;
+  }
+  .cuerpo-aside{
+    width: 35%;
+    height: 300px;
+    line-height: 300px;
+    float: left;
+  }
+
+  [class^="articulo-"]{
+    font-size: .8em;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 70px;
+  }
+
+  .icon-menu{
+    padding-right:  200px;
+  }
+}
+/* Diseño responsivo para 400px */
+@media screen and (max-width: 500px) {
+  .header{
+    position: relative;
+    margin-top: 1px;
+    margin-left:  1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    height: 70px;
+  }
+
+  [class^="contenedor-"]{
+    line-height: 70px;
+    font-size: .6em;
+  }
+  .contenedor-cabezera{
+    width: 100%;
+  }
+  .contenedor-icono{
+    display: none;
+  }
+  /* responsivo para cuerpo de la pagina */
+
+  .body{
+    position: relative;
+    margin-top: 1px;
+    margin-left:  1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    height: 680px;
+  }
+
+  [class^="cuerpo-"]{
+    text-align: center;
+    font-size: .6em;
+  }
+  .cuerpo-nav{
+    width: 100%;
+    line-height: 80px;
+    height: 80px;
+  }
+  .cuerpo-section{
+    width: 100%;
+    height: 300px;
+  }
+  .cuerpo-section h2{
+    padding-top: 10px;
+  }
+  .cuerpo-aside{
+    width: 100%;
+    height: 300px;
+    line-height: 300px;
+  }
+
+  [class^="articulo-"]{
+    font-size: .8em;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 70px;
+  }
+  .body nav .cuerpo-nav h2{
+    display: none;
+  }
+  .menu {
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 1px 1px 5px #fff;
+    font-family: verdana;
+  }
+  .icon-menu{
+    padding-right:  200px;
+  }
+
+}
